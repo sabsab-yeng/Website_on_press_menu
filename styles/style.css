@@ -1,0 +1,129 @@
+@font-face{
+    font-family: "Saysettha OT";
+    src: url("fonts/SaysetthaOT.ttf");
+}
+*{
+    font-family: "Saysettha OT";
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body
+{
+    background-image: url(../images/sabsab_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu-bar
+{
+    background: #cc33ff;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #d966ff;
+    border-radius: 10px;
+}
+.menu-bar .fa
+{
+     margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: #cc33ff;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding:  10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: turquoise;
+}
+
+.fa-angle-right
+{
+    float: right;
+}
+
+.sub-menu-2
+{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #cc33ff;
+}
+
+@media (max-width: 952px){
+    div ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .menu-bar{
+      display: block;
+    }
+    div ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    div ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+  }
